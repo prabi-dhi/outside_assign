@@ -33,30 +33,29 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Exact width as per your specification */
-  height: 191px; /* Exact height as per your specification */
+  width: 100%; 
+  height: 191px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
-  z-index: 1; /* Ensure it stays above the image */
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1; /* for navbar to stay above image */
 }
 
-/* Logo positioning inside navbar */
 .logo {
   margin-left: 40px; /* Position inside the navbar */
 }
 
-/* Navbar links positioning */
+/* Navbar links position */
 nav ul {
   display: flex;
   list-style: none;
   padding-left: 40px;
-  margin-right: 40px; /* Adjust right-side margin */
+  margin-right: 40px;
 }
 
 nav ul li {
-  margin-right: 30px; /* Space between each link */
+  margin-right: 30px; /*space between each nav items*/
 }
 
 nav ul li a {
@@ -64,16 +63,36 @@ nav ul li a {
   color: #222222;
   font-weight: bold;
   font-size: 18px;
-  line-height: 29px; /* Vertical alignment of text */
+  line-height: 29px;
 }
 
-/* Background image covering the viewport */
 .image img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover; /* Make the image cover the viewport without distortion */
-  z-index: -1; /* Ensure the image stays behind the navbar and other content */
+  object-fit: cover;
+  z-index: -1; 
+}
+.text {
+  position: absolute;
+  left: 153px; 
+  top: 279px;   
+  width: 856px; 
+  height: 382px;
+  color:#FFFFFF;
+  z-index: 2;
+}
+
+.text h1 {
+  font-family: "Sora", sans-serif;
+  font-weight:600;
+  font-size: 80px; /* Adjust the title size */
+  margin-bottom: 30px; /* Space between the title and paragraph */
+}
+
+.text .subtext {
+  font-size: 28px; 
+  line-height: 42px;
 }
