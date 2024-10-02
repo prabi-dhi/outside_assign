@@ -88,8 +88,8 @@ nav ul li a {
 .text h1 {
   font-family: "Sora", sans-serif;
   font-weight:600;
-  font-size: 80px; /* Adjust the title size */
-  margin-bottom: 30px; /* Space between the title and paragraph */
+  font-size: 80px; 
+  margin-bottom: 40px; 
 }
 
 .text .subtext {
