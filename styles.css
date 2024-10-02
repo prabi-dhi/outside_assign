@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  
+:root{
+  --light-white:#FFFFFF;
+  --white:#E5E5E5;
+  --dark-green:#012A22;
+  }
+
+*{
+  padding : 0;
+  margin :0;
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+  height: 100%;
+
+}
+
+.main-container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Navbar container */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Exact width as per your specification */
+  height: 191px; /* Exact height as per your specification */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+  z-index: 1; /* Ensure it stays above the image */
+}
+
+/* Logo positioning inside navbar */
+.logo {
+  margin-left: 40px; /* Position inside the navbar */
+}
+
+/* Navbar links positioning */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 40px;
+  margin-right: 40px; /* Adjust right-side margin */
+}
+
+nav ul li {
+  margin-right: 30px; /* Space between each link */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px; /* Vertical alignment of text */
+}
+
+/* Background image covering the viewport */
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Make the image cover the viewport without distortion */
+  z-index: -1; /* Ensure the image stays behind the navbar and other content */
+}
