@@ -16,8 +16,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Space Mono", monospace;
-
+  overflow-x: hidden;
 }
+h1 h2 h2{font-weight:600;}
 h1 {
   font-family: "Sora", sans-serif;
   font-weight:600;
@@ -25,7 +26,14 @@ h1 {
 }
 h2{
   font-family: "Sora", sans-serif;
+  font-weight:600;
   font-size: 48px;
+}
+h3{
+  font-family: "Sora", sans-serif;
+  font-size: 32px;
+  font-weight:600;
+  color:#065545;
 }
 
 .main-container {
@@ -93,16 +101,121 @@ nav ul li a {
   font-size: 28px; 
   line-height: 42px;
 }
-
-.second-container .text {
-  position: absolute;
-  top: 1060px;
+.second-container {
+  position: relative;
+  top: 120px;
   left: 153px;
-  color: #012A22;
 }
-.second-container .text .subtext{
+.title {
+  position: absolute;
+  color: #012A22;
+  margin-bottom: 16px;
+}
+.second_subtext{
   font-size: 20px;
-  top : 1134px;
   width: 1076px;
   color: #3D3D3D;
+}
+
+.subtitle {
+  width: 248px;
+  font-family: "Sora", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #065545;
+}
+
+.text-small {
+  color: #3D3D3D;
+  font-size: 16px;
+  width: 254px;
+  margin-bottom: 10px;
+}
+
+.text-block {
+  margin-bottom: 10px;
+  top: 164px;
+  position:absolute;
+}
+
+.position-1 {
+  left: 24px;
+}
+
+.position-2 {
+  left: 465px;
+}
+
+.position-3 {
+  left: 904px;
+}
+
+.second_image {
+  width: 416px;
+  height: 546px;
+  position: absolute;
+  margin-top: 20px;
+}
+.position1_img {
+  top: 400px; /* Adjust to position image below text block 1 */
+  left: 0px;
+}
+
+.position2_img {
+  top: 400px; /* Adjust to position image below text block 2 */
+  left: 441px;
+}
+
+.position3_img {
+  top: 400px; /* Adjust to position image below text block 3 */
+  left: 880px;
+}
+.line {
+  width: 0px;
+  height: 884px;
+  background-color: black;
+  margin-left: 20px; /* Space before the image */
+  align-self: flex-start; /* Line aligned to the left of the image */
+}
+.oval-button {
+  position: absolute;
+  margin-top:200px;
+  background-color:transparent;
+  width:48px;
+  height: 48px;
+  border-radius: 50%; /* Makes the button oval */
+  border: 2px solid #065545;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.oval-button .arrow {
+  margin-left: 15px;
+  font-size: 12.69px; /* Adjusts the height of the arrow */
+  line-height: 1; /* Makes sure the arrow isn't vertically misaligned */
+  transform: scale(1.22, 1); /* Stretches the width to 15.5px proportionally */
+  transition: margin-left 0.3s;
+}
+.oval-button:hover {
+  background-color: #FEBF58; /* Button color on hover */
+  width: auto; /* Resizes the button to fit the content */
+  padding: 0px 20px; /* Padding for the oval shape */
+  border-radius: 48px; /* Changes to an oval */
+  height: 48px; /* Keeps the height constant */
+}
+.oval-button:hover .arrow {
+  margin-left: 15px; /* Arrow moves when hovered */
+}
+.button1{
+  left:25px;
+}
+.button2{
+  left: 466px;
+}
+.button3{
+  top:150px;
+  left: 904px;
 }
