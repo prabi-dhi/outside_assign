@@ -157,33 +157,27 @@ nav ul li a {
   margin-top: 20px;
 }
 .position1_img {
-  top: 400px; /* Adjust to position image below text block 1 */
+  top: 400px;
   left: 0px;
 }
 
 .position2_img {
-  top: 400px; /* Adjust to position image below text block 2 */
+  top: 400px; 
   left: 441px;
 }
 
 .position3_img {
-  top: 400px; /* Adjust to position image below text block 3 */
+  top: 400px;
   left: 880px;
 }
-.line {
-  width: 0px;
-  height: 884px;
-  background-color: black;
-  margin-left: 20px; /* Space before the image */
-  align-self: flex-start; /* Line aligned to the left of the image */
-}
+
 .oval-button {
   position: absolute;
   margin-top:200px;
   background-color:transparent;
   width:48px;
   height: 48px;
-  border-radius: 50%; /* Makes the button oval */
+  border-radius: 50%; 
   border: 2px solid #065545;
   display: flex;
   align-items: center;
@@ -194,20 +188,20 @@ nav ul li a {
 
 .oval-button .arrow {
   margin-left: 15px;
-  font-size: 12.69px; /* Adjusts the height of the arrow */
-  line-height: 1; /* Makes sure the arrow isn't vertically misaligned */
-  transform: scale(1.22, 1); /* Stretches the width to 15.5px proportionally */
+  font-size: 12.69px; 
+  line-height: 1; 
+  transform: scale(1.22, 1); 
   transition: margin-left 0.3s;
 }
 .oval-button:hover {
-  background-color: #FEBF58; /* Button color on hover */
-  width: auto; /* Resizes the button to fit the content */
-  padding: 0px 20px; /* Padding for the oval shape */
-  border-radius: 48px; /* Changes to an oval */
-  height: 48px; /* Keeps the height constant */
+  background-color: #FEBF58; 
+  width: auto;
+  padding: 0px 20px; 
+  border-radius: 48px;
+  height: 48px; 
 }
 .oval-button:hover .arrow {
-  margin-left: 15px; /* Arrow moves when hovered */
+  margin-left: 15px;
 }
 .button1{
   left:25px;
@@ -218,4 +212,16 @@ nav ul li a {
 .button3{
   top:150px;
   left: 904px;
+}
+.line {
+  position:absolute;
+  width: 1px; 
+  height: 815px; 
+  background-color: #FEBC57;
+}
+.l1{
+  left: 440px;
+}
+.l2{
+  left:880px;
 }
