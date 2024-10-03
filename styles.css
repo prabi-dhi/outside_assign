@@ -36,7 +36,7 @@ h3{
   color:#065545;
 }
 
-.main-container {
+.first-container {
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -87,7 +87,7 @@ nav ul li a {
   z-index: -1; 
 }
 
-.main-container .text {
+.first-container .text {
   position: absolute;
   left: 153px; 
   top: 279px;   
@@ -97,14 +97,15 @@ nav ul li a {
   margin-bottom: 40px; 
 }
 
-.main-container .text .subtext {
+.first-container .text .subtext {
   font-size: 28px; 
   line-height: 42px;
 }
 .second-container {
   position: relative;
-  top: 120px;
+  top: 40px;
   left: 153px;
+  padding: 40px 0;
 }
 .title {
   position: absolute;
@@ -133,8 +134,7 @@ nav ul li a {
 }
 
 .text-block {
-  margin-bottom: 10px;
-  top: 164px;
+  top: 180px;
   position:absolute;
 }
 
@@ -157,17 +157,17 @@ nav ul li a {
   margin-top: 20px;
 }
 .position1_img {
-  top: 400px;
+  top: 451px;
   left: 0px;
 }
 
 .position2_img {
-  top: 400px; 
+  top: 451px; 
   left: 441px;
 }
 
 .position3_img {
-  top: 400px;
+  top: 451px;
   left: 880px;
 }
 
@@ -225,3 +225,29 @@ nav ul li a {
 .l2{
   left:880px;
 }
+.third-section {
+  position: relative;
+  top: 1017px;
+  background-color: #012A22; /* Green background */
+  color: white; /* Text color for contrast */
+  min-height: 300px;
+}
+.third_contains{
+  position:absolute;
+  left: 152px;
+}
+.small-text{
+  font-size:20px;
+}
+.video-container {
+  display:flex;
+  position:absolute;
+  width: 418px;
+  height: 392px;
+  gap: 20px;
+}
+video{
+  width:100%;
+  height:auto;
+}
+
