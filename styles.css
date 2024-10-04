@@ -78,7 +78,7 @@ nav ul li a {
 
 .image img {
   position: absolute;
-  width: 100%;
+  width: 1512px;
   height: 100vh;
   object-fit: cover;
   z-index: -1; 
@@ -221,7 +221,7 @@ nav ul li a {
 .third-section {
   margin:0 auto;
   position: relative;
-  width:100%;
+  width:1512px;
   display:fex;
   top: 950px;
   background-color: #012A22; 
