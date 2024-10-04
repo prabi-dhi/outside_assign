@@ -1,13 +1,10 @@
 function pauseVideo(videoId) {
     const video = document.getElementById(videoId);
-    video.pause(); // Pauses the video
+    video.pause();
 }
 const videos = document.querySelectorAll('video');
-
-        // Add event listeners to each video
         videos.forEach(video => {
             video.addEventListener('play', () => {
-                // Pause all other videos when one is played
                 videos.forEach(otherVideo => {
                     if (otherVideo !== video) {
                         otherVideo.pause();
@@ -15,3 +12,15 @@ const videos = document.querySelectorAll('video');
                 });
             });
         });
+
+
+const buttonLink = document.getElementById('button-link');
+
+buttonLink.addEventListener('click', function(event) {
+  event.preventDefault(); 
+  goToPage(); 
+});
+
+function goToPage() {
+  window.location.href = "#";
+}

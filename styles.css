@@ -18,7 +18,6 @@ body {
   font-family: "Space Mono", monospace;
   overflow-x: hidden;
 }
-h1 h2 h2{font-weight:600;}
 h1 {
   font-family: "Sora", sans-serif;
   font-weight:600;
@@ -102,16 +101,19 @@ nav ul li a {
   line-height: 42px;
 }
 .second-container {
+  display:flex;
   position: relative;
   top: 40px;
   left: 153px;
   padding: 40px 0;
+  
 }
 .title {
   position: absolute;
   color: #012A22;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
+
 .second_subtext{
   font-size: 20px;
   width: 1076px;
@@ -227,18 +229,19 @@ nav ul li a {
 }
 .third-section {
   position: relative;
+  width:100%;
+  display:fex;
   top: 1017px;
-  background-color: #012A22; /* Green background */
-  color: white; /* Text color for contrast */
-  min-height: 300px;
+  background-color: #012A22; 
+  color: white; 
+  min-height: 1200px;
 }
 .third_contains{
-  position:absolute;
-  left: 152px;
+  position:relative;
+  left: 150px;
+  padding-top: 50px;
 }
-.small-text{
-  font-size:20px;
-}
+
 .video-container {
   display:flex;
   position:absolute;
@@ -250,4 +253,64 @@ video{
   width:100%;
   height:auto;
 }
+.text-container{
+  display:flex;
+  margin-top:480px;
+}
+.text-container div{
+  position: relative;
+  margin-right: 90px; 
+}
+.text-container div h3{
+  color:#E8FCF5;
+}
+.small-text{
+  margin-left:0px;
+  margin-top:10px;
+  font-size:20px;
+  width: 354px;
+  margin-bottom:50px;
+}
 
+
+.footer{
+  position:relative;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns items from the top of the footer */
+  width:1302px;
+  height: 419px;
+  margin-left: 152px;
+  background-color:#FFFFFF;
+  display:flex;
+  flex-direction: column; /* Stack items vertically */
+}
+.footer_logo{
+  margin-left:112px;
+  padding-top: 50px;
+  }
+.social{
+  margin-left:112px;
+  padding-bottom: 70px;
+}
+.footer .links_container {
+  position:absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding-left:700px;
+  padding-right:160px;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+
+.footer ul li {
+  margin-bottom: 20px; /* Space between each nav item */
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #012A22;
+  font-size: 15px;
+}
