@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@media screen and (min-width: 968px) {
+
 :root{
   --light-white:#FFFFFF;
   --white:#E5E5E5;
   --dark-green:#012A22;
+  --image-width:200px;
   }
-}
+
+  @media screen and (min-width: 1200px) {
+    :root{
+      --image-width:400px;
+    }
+  }
 *{
   padding : 0;
   margin :0;
@@ -17,20 +23,21 @@ body {
   padding: 0;
   font-family: "Space Mono", monospace;
   overflow-x: hidden;
+  align-items: center;
 }
 h1 {
   font-family: "Sora", sans-serif;
   font-weight:600;
-  font-size: 80px; 
+  font-size: 5rem; 
 }
 h2{
   font-family: "Sora", sans-serif;
   font-weight:600;
-  font-size: 48px;
+  font-size: 3rem;
 }
 h3{
   font-family: "Sora", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight:600;
   color:#065545;
 }
@@ -42,7 +49,6 @@ h3{
   height: 100vh;
 }
 
-/* Navbar container */
 nav {
   position: absolute;
   width: 100%; 
@@ -51,14 +57,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.3);
-  z-index: 1; /* for navbar to stay above image */
+  z-index: 1; 
 }
 
 .logo {
-  margin-left: 40px; /* Position inside the navbar */
+  margin-left: 40px; 
 }
 
-/* Navbar links position */
 nav ul {
   display: flex;
   list-style: none;
@@ -67,15 +72,15 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 30px; /*space between each nav items*/
+  margin-right: 30px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #222222;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 29px;
+  font-size: 1.125rem;
+  line-height: 1.823;
 }
 
 .image img {
@@ -88,23 +93,24 @@ nav ul li a {
 
 .first-container .text {
   position: absolute;
-  left: 153px; 
+  left: 115px; 
   top: 279px;   
   width: 856px; 
   color:#FFFFFF;
   z-index: 2;
   margin-bottom: 40px; 
+  
 }
 
 .first-container .text .subtext {
-  font-size: 28px; 
+  font-size: 1.75rem; 
   line-height: 42px;
 }
 .second-container {
   display:flex;
   position: relative;
-  top: 40px;
-  left: 153px;
+  padding-top: 40px;
+  left: 115px;
   padding: 40px 0;
   
 }
@@ -115,7 +121,7 @@ nav ul li a {
 }
 
 .second_subtext{
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 1076px;
   color: #3D3D3D;
 }
@@ -141,7 +147,7 @@ nav ul li a {
 }
 
 .position-1 {
-  left: 24px;
+  left: 14px;
 }
 
 .position-2 {
@@ -153,19 +159,19 @@ nav ul li a {
 }
 
 .second_image {
-  width: 416px;
+  width: var(--image-width);
   height: 546px;
   position: absolute;
   margin-top: 20px;
 }
 .position1_img {
   top: 451px;
-  left: 0px;
+  left: 5px;
 }
 
 .position2_img {
   top: 451px; 
-  left: 441px;
+  left: 445px;
 }
 
 .position3_img {
@@ -222,32 +228,37 @@ nav ul li a {
   background-color: #FEBC57;
 }
 .l1{
-  left: 440px;
+  left: 444px;
 }
 .l2{
-  left:880px;
+  left:879px;
 }
 .third-section {
+  margin:0 auto;
   position: relative;
   width:100%;
   display:fex;
-  top: 1017px;
+  top: 950px;
   background-color: #012A22; 
   color: white; 
   min-height: 1200px;
+  justify-content: space-between;
+  align-items: center;
 }
 .third_contains{
   position:relative;
-  left: 150px;
+  left: 115px;
   padding-top: 50px;
+  
 }
 
 .video-container {
   display:flex;
   position:absolute;
-  width: 418px;
-  height: 392px;
-  gap: 20px;
+  width: 400px;
+  height: 500px;
+  gap: 15px;
+  align-items: center;
 }
 video{
   width:100%;
@@ -255,7 +266,8 @@ video{
 }
 .text-container{
   display:flex;
-  margin-top:480px;
+  margin-top:470px;
+  
 }
 .text-container div{
   position: relative;
@@ -272,17 +284,16 @@ video{
   margin-bottom:50px;
 }
 
-
 .footer{
   position:relative;
   justify-content: space-between;
-  align-items: flex-start; /* Aligns items from the top of the footer */
-  width:1302px;
+  align-items: flex-start; 
+  width:1250px;
   height: 419px;
-  margin-left: 152px;
+  margin-left: 115px;
   background-color:#FFFFFF;
   display:flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
 }
 .footer_logo{
   margin-left:112px;
@@ -304,9 +315,8 @@ video{
   flex-wrap: wrap;
 }
 
-
 .footer ul li {
-  margin-bottom: 20px; /* Space between each nav item */
+  margin-bottom: 20px; 
 }
 
 .footer ul li a {
@@ -314,3 +324,4 @@ video{
   color: #012A22;
   font-size: 15px;
 }
+
