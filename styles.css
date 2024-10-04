@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-
 :root{
   --light-white:#FFFFFF;
   --white:#E5E5E5;
   --dark-green:#012A22;
   --image-width:200px;
   }
-
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     :root{
       --image-width:400px;
     }
@@ -59,22 +56,18 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 1; 
 }
-
 .logo {
   margin-left: 40px; 
 }
-
 nav ul {
   display: flex;
   list-style: none;
   padding-left: 40px;
   margin-right: 40px;
 }
-
 nav ul li {
   margin-right: 30px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #222222;
@@ -99,33 +92,29 @@ nav ul li a {
   color:#FFFFFF;
   z-index: 2;
   margin-bottom: 40px; 
-  
 }
-
 .first-container .text .subtext {
   font-size: 1.75rem; 
   line-height: 42px;
 }
+
 .second-container {
   display:flex;
   position: relative;
   padding-top: 40px;
   left: 115px;
   padding: 40px 0;
-  
 }
 .title {
   position: absolute;
   color: #012A22;
   margin-bottom: 15px;
 }
-
 .second_subtext{
   font-size: 1.25rem;
   width: 1076px;
   color: #3D3D3D;
 }
-
 .subtitle {
   width: 248px;
   font-family: "Sora", sans-serif;
@@ -133,7 +122,6 @@ nav ul li a {
   font-weight: 600;
   color: #065545;
 }
-
 .text-small {
   color: #3D3D3D;
   font-size: 16px;
@@ -149,11 +137,9 @@ nav ul li a {
 .position-1 {
   left: 14px;
 }
-
 .position-2 {
   left: 465px;
 }
-
 .position-3 {
   left: 904px;
 }
@@ -168,12 +154,10 @@ nav ul li a {
   top: 451px;
   left: 5px;
 }
-
 .position2_img {
   top: 451px; 
   left: 445px;
 }
-
 .position3_img {
   top: 451px;
   left: 880px;
@@ -193,7 +177,6 @@ nav ul li a {
   outline: none;
   transition: all 0.3s ease;
 }
-
 .oval-button .arrow {
   margin-left: 15px;
   font-size: 12.69px; 
@@ -221,6 +204,7 @@ nav ul li a {
   top:150px;
   left: 904px;
 }
+
 .line {
   position:absolute;
   width: 1px; 
@@ -233,6 +217,7 @@ nav ul li a {
 .l2{
   left:879px;
 }
+
 .third-section {
   margin:0 auto;
   position: relative;
@@ -264,10 +249,10 @@ video{
   width:100%;
   height:auto;
 }
+
 .text-container{
   display:flex;
   margin-top:470px;
-  
 }
 .text-container div{
   position: relative;
@@ -314,11 +299,9 @@ video{
   padding-top: 100px;
   flex-wrap: wrap;
 }
-
 .footer ul li {
   margin-bottom: 20px; 
 }
-
 .footer ul li a {
   text-decoration: none;
   color: #012A22;
