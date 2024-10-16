@@ -1,7 +1,4 @@
-function pauseVideo(videoId) {
-    const video = document.getElementById(videoId);
-    video.pause();
-}
+
 const videos = document.querySelectorAll('video');
         videos.forEach(video => {
             video.addEventListener('play', () => {
