@@ -175,14 +175,13 @@ nav ul li a {
   display: flex;
   align-items: center;
   cursor: pointer;
-  outline: none;
   transition: all 0.3s ease;
 }
 .oval-button .arrow {
   margin-left: 15px;
   font-size: 12.69px; 
   line-height: 1; 
-  transform: scale(1.22, 1); 
+
   transition: margin-left 0.3s;
 }
 .oval-button:hover {
@@ -194,6 +193,7 @@ nav ul li a {
 }
 .oval-button:hover .arrow {
   margin-left: 15px;
+  transform: scale(1.22, 2); 
 }
 .button1{
   left:25px;
