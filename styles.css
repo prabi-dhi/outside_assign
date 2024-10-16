@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
   --light-white:#FFFFFF;
-  --white:#E5E5E5;
+  --text-color:#3D3D3D;
+  --light-green:#065545;
   --dark-green:#012A22;
   --image-width:200px;
   }
@@ -36,7 +37,7 @@ h3{
   font-family: "Sora", sans-serif;
   font-size: 2rem;
   font-weight:600;
-  color:#065545;
+  color:var(--light-green);
 }
 
 .first-container {
@@ -89,7 +90,7 @@ nav ul li a {
   left: 115px; 
   top: 279px;   
   width: 856px; 
-  color:#FFFFFF;
+  color:var(--light-white);
   z-index: 2;
   margin-bottom: 40px; 
 }
@@ -107,23 +108,23 @@ nav ul li a {
 }
 .title {
   position: absolute;
-  color: #012A22;
+  color:var(--dark-green);
   margin-bottom: 15px;
 }
 .second_subtext{
   font-size: 1.25rem;
   width: 1076px;
-  color: #3D3D3D;
+  color: var(--text-color);
 }
 .subtitle {
   width: 248px;
   font-family: "Sora", sans-serif;
   font-size: 32px;
   font-weight: 600;
-  color: #065545;
+  color: var(--light-green);
 }
 .text-small {
-  color: #3D3D3D;
+  color: var(--text-color);
   font-size: 16px;
   width: 254px;
   margin-bottom: 10px;
@@ -224,8 +225,8 @@ nav ul li a {
   width:1512px;
   display:fex;
   top: 950px;
-  background-color: #012A22; 
-  color: white; 
+  background-color: var(--dark-green); 
+  color:var(--light-white); 
   min-height: 1200px;
   justify-content: space-between;
   align-items: center;
@@ -233,8 +234,7 @@ nav ul li a {
 .third_contains{
   position:relative;
   left: 115px;
-  padding-top: 50px;
-  
+  padding-top: 50px; 
 }
 
 .video-container {
@@ -276,7 +276,7 @@ video{
   width:1250px;
   height: 419px;
   margin-left: 115px;
-  background-color:#FFFFFF;
+  background-color:var(--light-white);
   display:flex;
   flex-direction: column;
 }
@@ -304,7 +304,7 @@ video{
 }
 .footer ul li a {
   text-decoration: none;
-  color: #012A22;
+  color:var(--dark-green);
   font-size: 15px;
 }
 
